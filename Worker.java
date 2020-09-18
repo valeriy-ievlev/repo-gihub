@@ -27,12 +27,12 @@ public class Worker {
 
         for (int i = 0; i < workersArray.length; i++) {
             if (workersArray[i].age > 40)
-                printInfo(workersArray[i]);
+                workersArray[i].printInfo();
         }
     }
 
-    public static void printInfo(Worker worker) {
-         System.out.println("Name - " + worker.name + " position - " + worker.position + " email - " + worker.email + " telNumber " +
-                 worker.telNumber + " slary - " + worker.telNumber + " age - " + worker.age);
+    public void printInfo() {
+         System.out.println("Name - " + this.name + " position - " + this.position + " email - " + this.email + " telNumber " +
+                 this.telNumber + " slary - " + this.telNumber + " age - " + this.age);
     }
 }
